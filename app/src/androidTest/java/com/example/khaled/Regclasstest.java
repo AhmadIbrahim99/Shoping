@@ -9,7 +9,9 @@ import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;
 import static androidx.test.espresso.action.ViewActions.typeText;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
-//twoel
+
+//khaled tawil class
+
 public class Regclasstest {
     @Rule
 
