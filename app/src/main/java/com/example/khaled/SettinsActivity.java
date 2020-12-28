@@ -45,7 +45,7 @@ public class SettinsActivity extends AppCompatActivity {
     private String myUrl = "";
     private StorageTask uploadTask;
     private StorageReference storageProfilePrictureRef;
-    private String checker = "";
+    public String checker = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,13 +54,13 @@ public class SettinsActivity extends AppCompatActivity {
 
         storageProfilePrictureRef = FirebaseStorage.getInstance().getReference().child("Profile pictures");
 
-        profileImageView = (CircleImageView) findViewById(R.id.settings_profile_image);
-        fullNameEditText = (EditText) findViewById(R.id.settings_full_name);
-        userPhoneEditText = (EditText) findViewById(R.id.settings_phone_number);
-        addressEditText = (EditText) findViewById(R.id.settings_address);
-        profileChangeTextBtn = (TextView) findViewById(R.id.profile_image_change_btn);
-        closeTextBtn = (TextView) findViewById(R.id.close_settings_btn);
-        saveTextButton = (TextView) findViewById(R.id.update_account_settings_btn);
+        profileImageView =  findViewById(R.id.settings_profile_image);
+        fullNameEditText =  findViewById(R.id.settings_full_name);
+        userPhoneEditText =  findViewById(R.id.settings_phone_number);
+        addressEditText =  findViewById(R.id.settings_address);
+        profileChangeTextBtn =  findViewById(R.id.profile_image_change_btn);
+        closeTextBtn =  findViewById(R.id.close_settings_btn);
+        saveTextButton =  findViewById(R.id.update_account_settings_btn);
         securityQuestionBtn = findViewById(R.id.security_questions_btn);
 
         userInfoDisplay(profileImageView, fullNameEditText, userPhoneEditText, addressEditText);
@@ -109,7 +109,7 @@ public class SettinsActivity extends AppCompatActivity {
 
     }
 
-    private void updateOnlyUserInfo() {
+    public void updateOnlyUserInfo() {
 
         DatabaseReference ref = FirebaseDatabase.getInstance().getReference().child("Users");
 

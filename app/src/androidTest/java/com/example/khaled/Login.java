@@ -8,9 +8,8 @@ import org.junit.Test;
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;
 import static androidx.test.espresso.action.ViewActions.typeText;
-import static androidx.test.espresso.matcher.ViewMatchers.isClickable;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
-
+//naja Made
 public class Login {
     @Rule
 
@@ -29,5 +28,7 @@ public class Login {
     public void login(){
         onView(withId(R.id.login_btn)).perform(click());
     }
+
+
 
 }

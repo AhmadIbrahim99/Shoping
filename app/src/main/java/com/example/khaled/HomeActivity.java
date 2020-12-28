@@ -94,8 +94,8 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 
         if (!type.equals("Admin"))
         {
-            userNameTextView.setText(Prevalent.currentOnlineUser.getName());
-            Picasso.get().load(Prevalent.currentOnlineUser.getImage()).placeholder(R.drawable.profile).into(profileImageView);
+            userNameTextView.setText("Prevalent.currentOnlineUser.getName()");
+         //   Picasso.get().load(Prevalent.currentOnlineUser.getImage()).placeholder(R.drawable.profile).into(profileImageView);
         }
 
 
