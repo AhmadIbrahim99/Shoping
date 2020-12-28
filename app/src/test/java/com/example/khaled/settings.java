@@ -6,6 +6,7 @@ import static org.junit.Assert.assertTrue;
 
 public class settings {
    SettinsActivity settinsActivity= new SettinsActivity();
+   //Ahmed shahwan
 
     @Test
     public void test()throws NullPointerException{//التحقق عند تغيير البيانات
