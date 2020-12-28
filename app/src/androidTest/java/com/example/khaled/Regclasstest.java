@@ -20,7 +20,7 @@ public class Regclasstest {
 
     @Test
     public void user_can_enter_Name(){
-        onView(withId(R.id.register_username_input)).perform(typeText("kahled"));
+        onView(withId(R.id.register_username_input)).perform(typeText("khaled"));
     }
     @Test
     public void user_can_enter_phone_Number(){
