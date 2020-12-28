@@ -20,15 +20,15 @@ public class Regclasstest {
 
     @Test
     public void user_can_enter_Name(){
-        onView(withId(R.id.register_username_input)).perform(typeText("Ahmad"));
+        onView(withId(R.id.register_username_input)).perform(typeText("kahled"));
     }
     @Test
     public void user_can_enter_phone_Number(){
-        onView(withId(R.id.register_phone_number_input)).perform(typeText("0597674243"));
+        onView(withId(R.id.register_phone_number_input)).perform(typeText("0595129080"));
     }
     @Test
     public void user_can_enter_Password(){
-        onView(withId(R.id.register_password_input)).perform(typeText("Ahmad"));
+        onView(withId(R.id.register_password_input)).perform(typeText("kh123456789***"));
     }
     @Test
     public void register(){
