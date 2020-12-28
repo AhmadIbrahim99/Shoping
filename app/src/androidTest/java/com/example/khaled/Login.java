@@ -6,7 +6,9 @@ import org.junit.Rule;
 import org.junit.Test;
 
 import static androidx.test.espresso.Espresso.onView;
+import static androidx.test.espresso.action.ViewActions.click;
 import static androidx.test.espresso.action.ViewActions.typeText;
+import static androidx.test.espresso.matcher.ViewMatchers.isClickable;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
 
 public class Login {
@@ -22,6 +24,10 @@ public class Login {
     @Test
     public void user_can_enter_phone_Number(){
         onView(withId(R.id.login_phone_number_input)).perform(typeText("0597674243"));
+    }
+    @Test
+    public void login(){
+        onView(withId(R.id.login_btn)).perform(click());
     }
 
 }
