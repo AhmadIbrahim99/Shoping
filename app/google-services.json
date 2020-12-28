@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "85151148995",
+    "project_id": "ecommerce-7e78e",
+    "storage_bucket": "ecommerce-7e78e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:85151148995:android:a5d8f66e896a62e5ebeb76",
+        "android_client_info": {
+          "package_name": "com.example.khaled"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "85151148995-5ttecgvcf3q8acq9c3pje245vvgpr06t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.khaled",
+            "certificate_hash": "eadfd02d26adc0a3a6d0404890b4900e95bdb1ea"
+          }
+        },
+        {
+          "client_id": "85151148995-2q6sifb7dl7uqhcbr4m277eqcanefbqa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIqy6EddC5tL6lEgKnUc6LwSDCB1uyiyw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "85151148995-2q6sifb7dl7uqhcbr4m277eqcanefbqa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
