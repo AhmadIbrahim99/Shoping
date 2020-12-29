@@ -7,6 +7,7 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -66,12 +67,17 @@ public class RegisterActivity extends AppCompatActivity {
         {
             Toast.makeText(this, "Please write your password...", Toast.LENGTH_SHORT).show();
         }
+        else if (IsValidation(phone,password))
+        {
+            Toast.makeText(this, "invalid email or password", Toast.LENGTH_SHORT).show();
+        }
         else
         {
             loadingBar.setTitle("Create Account");
             loadingBar.setMessage("Please wait, while we are checking the credentials.");
             loadingBar.setCanceledOnTouchOutside(false);
             loadingBar.show();
+
 
             ValidatephoneNumber(name, phone, password);
         }
@@ -135,5 +141,31 @@ public class RegisterActivity extends AppCompatActivity {
         });
 
     }
+    public boolean IsValidation(String Phone,String password) {
+        // Check for a valid email address.
+        System.out.println(Phone+"fgh"+password);
+        boolean isEmailValid=true;
+        boolean isPasswordValid=true;
+        if (Phone.isEmpty()) {
+            isEmailValid = false;
+        } else if (!Phone.startsWith("059")) {
+            isEmailValid = false;
+        } else  {
+            isEmailValid = true;
+        }
+
+        // Check for a valid password.
+        if (password.isEmpty()) {
+            isPasswordValid = false;
+        } else if (password.length() < 6) {
+            isPasswordValid = false;
+        } else  {
+            isPasswordValid = true;
+        }
+
+        return isEmailValid && isPasswordValid;
+
+    }
+
 
 }
