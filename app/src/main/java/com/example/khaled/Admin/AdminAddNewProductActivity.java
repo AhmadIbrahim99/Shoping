@@ -234,4 +234,23 @@ public class AdminAddNewProductActivity extends AppCompatActivity {
 
     }
 
+    public boolean IsProductData(String Description,String Price,String Pname)
+    {
+       boolean isValid=true;
+
+        if (Description.length()==0)
+        {
+            isValid=false;
+        }
+        else if (Price.length()==0)
+        {
+            isValid=false;
+       }
+        else if (Pname.length()==0)
+        {
+            isValid=false;
+        }
+       return isValid;
+    }
+
 }
